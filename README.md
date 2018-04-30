@@ -1,6 +1,6 @@
 # SoftwareEngineeringProject
 
-**Team Members: **
+**Team Members:**
 * Max Crookshanks
 * Jonathan Esquivel
 * Matthew Keller
