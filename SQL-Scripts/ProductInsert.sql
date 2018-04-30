@@ -1,20 +1,20 @@
 use GDSGoods;
 DELETE FROM Product;
 INSERT INTO Product VALUES(
-    "Giant Melons", "GM123", 10.00
+    "GM123", "Giant Melons", 10.00
 );
 INSERT INTO Product VALUES(
-    "Small Melons", "SM234", 5.00
+    "SM234", "Small Melons", 5.00
 );
 INSERT INTO Product VALUES(
-    "Grapes", "GP564", 4.00
+    "GP564", "Grapes", 4.00
 );
 INSERT INTO Product VALUES(
-    "Banana", "BN664", 0.50
+    "BN664", "Banana", 0.50
 );
 INSERT INTO Product VALUES(
-    "Orange", "OR876", 0.15
+    "OR876", "Orange", 0.15
 );
 INSERT INTO Product VALUES(
-    "Strawberry", "ST456", 1.00
+    "ST456", "Strawberry", 1.00
 );
