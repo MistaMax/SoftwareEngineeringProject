@@ -1,9 +1,0 @@
-USE GDSGoods;
-DROP TABLE IF EXISTS Inventory;
-CREATE TABLE Inventory (
-  szProductID    VARCHAR(45) NOT NULL,
-  iQuantity      INT(100)    NOT NULL DEFAULT 0,
-  szRecievedDt   VARCHAR(45) NOT NULL DEFAULT '00-00-0000',
-  szExpirationDt VARCHAR(45) NOT NULL DEFAULT '00-00-0000',
-  PRIMARY KEY (szProductID)
-);
