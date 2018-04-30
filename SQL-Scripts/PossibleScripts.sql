@@ -26,6 +26,7 @@ SELECT
   p.szProductID,
   p.szProductName,
   i.iQuantity,
+  p.dbPrice,
   i.szRecievedDt,
   i.szExpirationDt
 FROM
