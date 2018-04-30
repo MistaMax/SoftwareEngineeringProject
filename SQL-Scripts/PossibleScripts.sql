@@ -19,3 +19,17 @@ FROM
 WHERE
   o.szOrderID = 'ORDER_ID'
     AND o.szProductID =  p.szProductID;
+
+-- Select the Inventory and the Product name
+-- Name is from the Product table
+SELECT 
+  p.szProductID,
+  p.szProductName,
+  i.iQuantity,
+  i.szRecievedDt,
+  i.szExpirationDt
+FROM
+  Product p,
+  Inventory i
+WHERE
+  i.szProductID = p.szProductID;
