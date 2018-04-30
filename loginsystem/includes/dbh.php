@@ -3,6 +3,6 @@
 $dbServername = "localhost";
 $dbUsername = "root";
 $dbPassword = "";
-$dbName = "loginsystem";
+$dbName = "gggoods";
 
 $connection = mysqli_connect($dbServername,$dbUsername, $dbPassword, $dbName);
