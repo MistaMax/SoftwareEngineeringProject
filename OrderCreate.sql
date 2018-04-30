@@ -1,0 +1,10 @@
+USE GDSGoods;
+DROP TABLE IF EXISTS Orders;
+CREATE TABLE Orders (
+  szOrderID     VARCHAR(45)  NOT NULL,
+  szProductID   VARCHAR(45)  NOT NULL,
+  iQuantity     INT(100)     NOT NULL DEFAULT 0,
+  szShipmentID  VARCHAR(45)  NOT NULL,
+  szOrderDT     VARCHAR(45)  NOT NULL DEFAULT '00-00-0000',
+  PRIMARY KEY (szProductID)
+);
