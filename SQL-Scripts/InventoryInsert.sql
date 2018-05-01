@@ -1,20 +1,20 @@
 use GDSGoods;
 DELETE FROM Inventory;
 INSERT INTO Inventory VALUES(
-    "GM123", 2, "04-20-2019", "05-30-2019"
+    "GM123", 2, "2018-04-20", "2018-05-30"
 );
 INSERT INTO Inventory VALUES(
-    "BN664", 20, "03-10-2019", "05-10-2019"
+    "BN664", 20, "2018-03-10", "2018-05-10"
 );
 INSERT INTO Inventory VALUES(
-    "GP564", 45, "04-10-2019", "05-15-2019"
+    "GP564", 45, "2018-04-10", "2018-05-15"
 );
 INSERT INTO Inventory VALUES(
-    "OR876", 10, "04-20-2019", "05-15-2019"
+    "OR876", 10, "2018-04-20", "2018-04-15"
 );
 INSERT INTO Inventory VALUES(
-    "SM234", 10, "03-20-2019", "05-30-2019"
+    "SM234", 10, "2018-03-20", "2018-05-30"
 );
 INSERT INTO Inventory VALUES(
-    "ST456", 5, "01-01-2019", "02-02-2019"
+    "ST456", 5, "2018-01-01", "2018-02-02"
 );
