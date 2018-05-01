@@ -60,3 +60,12 @@ FROM
     GROUP BY oo.szOrderID , oo.szProductID , oo.szOrderDT) t1
 GROUP BY t1.szOrderID , t1.szOrderDT;
 
+--5
+-- Alert system for Expired/soon to expire products in the inventory
+-- 7 day interval from current date
+SELECT 
+    i.szProductID
+FROM
+    Inventory i
+WHERE
+    i.szExpirationDt <= DATE(DATE_ADD(NOW(), INTERVAL + 7 DAY));
