@@ -5,6 +5,6 @@ CREATE TABLE Orders (
   szProductID   VARCHAR(45)  NOT NULL,
   iQuantity     INT(100)     NOT NULL DEFAULT 0,
   szShipmentID  VARCHAR(45)  NOT NULL,
-  szOrderDT     VARCHAR(45)  NOT NULL DEFAULT '00-00-0000',
+  szOrderDT     DATE         NOT NULL DEFAULT '1000-01-01',
   PRIMARY KEY (szProductID)
 );
