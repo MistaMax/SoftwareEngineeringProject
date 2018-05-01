@@ -69,3 +69,21 @@ FROM
     Inventory i
 WHERE
     i.szExpirationDt <= DATE(DATE_ADD(NOW(), INTERVAL + 7 DAY));
+
+--6
+-- Alert System for products running low
+SELECT 
+    t1.szProductID,
+    t1.szProductName,
+    t1.iTotal AS iTotalProducts
+FROM
+    (SELECT 
+        i.szProductID, SUM(i.iQuantity) AS iTotal, p.szProductName
+    FROM
+        Inventory i, Product p
+    WHERE
+        p.szProductID = i.szProductID
+    GROUP BY i.szProductID) t1
+WHERE
+    t1.iTotal < 15;
+
