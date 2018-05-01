@@ -8,13 +8,15 @@
 		<p>
 		<?php
 			if(isset($_SESSION['u_id'])){
-				echo "WELCOME TO  GROCERCERY DELIVERY MANAGEMENT SYSTEM";
+				echo "<h3>WELCOME TO  GROCERCERY DELIVERY MANAGEMENT SYSTEM</h3>";
 				?>
 				<div class="dropdown">
-				<button class="dropbtn">Dropdown</button>
+				<button class="dropbtn">Take Action!</button>
 				<div class="dropdown-content">
 				<a href="view_product.php">View Product</a>
 				<a href="Edit_Product.php">Edit Product</a>
+				<a href="Add_Product.php">Add A New Product</a>
+				<a href="view_orders.php">View Orders</a>
 				</div>
 				</div>
 				<?php
