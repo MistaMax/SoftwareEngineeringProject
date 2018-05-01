@@ -5,5 +5,5 @@ CREATE TABLE Inventory (
   iQuantity      INT(100)    NOT NULL DEFAULT 0,
   szRecievedDt   DATE        NOT NULL DEFAULT '1000-01-01',
   szExpirationDt DATE        NOT NULL DEFAULT '1000-01-01',
-  PRIMARY KEY (szProductID)
+  PRIMARY KEY (szProductID, szRecievedDt)
 );
