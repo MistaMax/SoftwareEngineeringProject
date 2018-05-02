@@ -9,9 +9,8 @@
 			<input type="text" name="Product_Id" placeholder="Product ID">
 			<input type="text" name="Product_Name" placeholder="Product Name">
 			<input type="text" name="Price" placeholder="Price">
-			<input type="text" name="Location" placeholder="Location">
 			<input type="text" name="Quantity" placeholder="Quantity">
-			<input type="text" name="Expire_Date" placeholder="Expiration Date (YYYY-MM-DD)">
+			<input type="text" name="Expire_Date" placeholder="Expiration Date">
 			<button type="submit" name="submit">Add Product</button>
 		</form>
 	</div>
