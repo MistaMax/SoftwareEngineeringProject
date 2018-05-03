@@ -2,9 +2,13 @@
 	include_once 'header.php';
 	include 'includes/dbh.php';
 ?>
-<section class="main-container">
-<div class="main-wrapper">
-                        <h2>View_Alerts</h2>
+<div class="container-fluid">
+        <div class="row">
+            <div class="col">
+                <div class="position-relative overflow-hidden p-3 p-md-5 m-md-3 text-center bg-semilight">
+                    <div class="col-md-5 p-lg-5 mx-auto my-5">
+                        <h1 class="display-4 font-weight-normal">View_Alerts</h1>
+                        <p class="lead font-weight-normal">
 						<?php 
 //$query = "SELECT * FROM `inventory`";
 $query = "SELECT 
@@ -19,7 +23,7 @@ WHERE
 $response = mysqli_query($connection, $query);
 
 
-echo "<h2>EXIPIRATION ALERT</h2>";
+echo "<h2>EXIPIRES SOON</h2>";
 if($response){
 	echo '<table cellspacing="5" cellpadding="5" >
 	<col width = "200">
@@ -84,9 +88,9 @@ if($response){
 
 
 ?>
-</div>
-</section>
-
-<?php
-	include_once 'footer.php';
-?>
+						</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
