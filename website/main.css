@@ -144,3 +144,12 @@
 .color-white{
     color:white;
 }
+
+.center {
+    //position:absolute;
+    left:50%;
+}
+
+.b50 {
+    bottom:50%;
+}

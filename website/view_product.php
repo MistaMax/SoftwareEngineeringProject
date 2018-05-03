@@ -2,13 +2,11 @@
 	include_once 'header.php';
 	include 'includes/dbh.php';
 ?>
-<div class="container-fluid">
-        <div class="row">
-            <div class="col">
-                <div class="position-relative overflow-hidden p-3 p-md-5 m-md-3 text-center bg-semilight">
-                    <div class="col-md-5 p-lg-5 mx-auto my-5">
-                        <h1 class="display-4 font-weight-normal">View_Product</h1>
-                        <p class="lead font-weight-normal">
+<section class="main-container">
+<div class="main-wrapper">
+						<h2>View Inventory</h2>
+						</div>
+</section>
 						<?php 
 //$query = "SELECT * FROM `inventory`";
 
@@ -17,7 +15,7 @@ $query = " SELECT p.szProductID, p.szProductName, p.szLocation, i.iQuantity, p.d
 $response = mysqli_query($connection, $query);
 
 if($response){
-	echo '<table cellspacing="5" cellpadding="5" ><h4></h4>
+	echo '<table class="center" cellspacing="5" cellpadding="5" ><h4></h4>
 	<col width = "200">
 	<col width = "200">
 	<col width = "200">
@@ -46,12 +44,7 @@ if($response){
 	}
 	echo '</table>';
 }
-
 ?>
-
-						</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
+<?php
+	include_once 'footer.php';
+?>

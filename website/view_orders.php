@@ -2,13 +2,11 @@
 	include_once 'header.php';
 	include 'includes/dbh.php';
 ?>
-<div class="container-fluid">
-        <div class="row">
-            <div class="col">
-                <div class="position-relative overflow-hidden p-3 p-md-5 m-md-3 text-center bg-semilight">
-                    <div class="col-md-5 p-lg-5 mx-auto my-5">
-                        <h1 class="display-4 font-weight-normal">View_Orders</h1>
-                        <p class="lead font-weight-normal">
+<section class="main-container">
+<div class="main-wrapper">
+						<h2>View Orders</h2>
+						</div>
+</section>
 						<?php 
 //$query = "SELECT * FROM `inventory`";
 $query = "SELECT t1.szOrderID, t1.szOrderDT, SUM(dbTotalPrice) AS dbTotalCost, SUM(iTotalQty) AS iTotalItems 
@@ -18,7 +16,7 @@ FROM Orders oo, Product pp WHERE oo.szProductID = pp.szProductID GROUP BY oo.szO
 $response = mysqli_query($connection, $query);
 
 if($response){
-	echo '<table cellspacing="5" cellpadding="5" ><h4></h4>
+	echo '<table class="center" cellspacing="5" cellpadding="5" ><h4></h4>
 	<col width = "200">
 	<col width = "200">
 	<col width = "200">
@@ -41,9 +39,7 @@ if($response){
 }
 
 ?>
-						</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
+
+<?php
+	include_once 'footer.php';
+?>
